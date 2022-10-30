@@ -15,9 +15,9 @@ body {
 a {
   cursor: var(--hover);
 }
-/* body::after {
+ body::after {
     background-color: #FAC710;
-} */
+} 
 
 
 /*loading*/
