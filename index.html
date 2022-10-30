@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Machine</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="date=no">
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/carousel/owl.carousel.css" rel="stylesheet" >
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/carousel/owl.theme.default.css" rel="stylesheet" >
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/master.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/forms.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/animation.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/activity.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="https://streetmachine.oss-us-west-1.aliyuncs.com/css/adaptive.css" rel="stylesheet" type="text/css" />
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/jsonData.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/jquery-2.1.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="fakeloader"></div>
+      <div id="index_loading_layer" style="display:none;">
+        <div class="loading">
+            <div class="screen">
+              <img src="https://streetmachine.oss-us-west-1.aliyuncs.com/images/logo.png" class="logo" alt="" />
+              <div class="loadgif">
+                <img src="https://streetmachine.oss-us-west-1.aliyuncs.com/images/index/loading.gif" alt="" id="index_loading_layer_loadingxx" />
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="index_main_layer" style="display:none;">
+      <div class="main">
+        <div class="screen">
+              <img src="" alt="" id="index_loading_layer_main">
+          </div>
+          <div class="screen-btn">
+            <div class="main-text">Halloween Airdrop</div>
+            <div class="main-btn radius7PX">C L A I M</div>
+          </div>
+      </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+      var loading = sessionStorage.getItem("loading");
+      if(loading==null){
+          $("#home").hide();
+          openMain();
+          sessionStorage.setItem("loading", "openLoading");
+      }
+    });
+    </script>
+
+    
+
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/modal.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/common.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/carousel/_carousel.js" type="text/javascript"></script>
+    <script src="https://streetmachine.oss-us-west-1.aliyuncs.com/js/progress/progress.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/images/index.js" type="text/javascript"></script>
+</body>
+
+</html>

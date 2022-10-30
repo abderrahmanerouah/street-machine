@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "tokenLogo";
+    /* Project id 2774599 */
+    src: url('../fonts/tokenLogo.woff2') format('woff2'), url('../fonts/tokenLogo.woff') format('woff'), url('../fonts/tokenLogo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2774729 */
+    src: url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Headliner No. 45';
+  src : url('../fonts/HeadlinerNo-45-DEMO-1.ttf');
+}
+
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/BarlowCondensed-Regular.ttf') format('woff2') ,
+    url('../fonts/BarlowCondensed-Black.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-BlackItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-Bold.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-BoldItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-ExtraBold.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-ExtraBoldItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-ExtraLight.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-ExtraLightItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-Italic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-Light.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-LightItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-Medium.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-MediumItalic.ttf') format('woff2'),
+    url('../fonts/BarlowCondensed-SemiBold.ttf') format('woff2') ,
+    url('../fonts/BarlowCondensed-SemiBoldItalic.ttf') format('woff2') ,
+    url('../fonts/BarlowCondensed-Thin.ttf') format('woff2') ,
+    url('../fonts/BarlowCondensed-ThinItalic.ttf') format('woff2') ,
+}
+
+
+
+
+@font-face{
+  font-family: 'Barlow-SemiBold';
+  src : url('../fonts/BarlowCondensed-SemiBold.ttf');
+}
+@font-face{
+  font-family: 'Barlow-Bold';
+  src : url('../fonts/BarlowCondensed-Bold.ttf');
+}
+@font-face{
+  font-family: 'Barlow';
+  src : url('../fonts/BarlowCondensed-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Barlow-BoldItalic';
+  src : url('../fonts/BarlowCondensed-BoldItalic.ttf');
+}
+@font-face{
+  font-family: 'Barlow-ExtraBold';
+  src : url('../fonts/BarlowCondensed-ExtraBold.ttf');
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Android:before {
+    content: "\e65f";
+}
+
+.icon-iOS:before {
+    content: "\e660";
+}
+
+.icon-fall:before {
+    content: "\e65c";
+}
+
+.icon-rise:before {
+    content: "\e65d";
+}
+
+.icon-stable:before {
+    content: "\e65e";
+}
+
+.icon-StatusIcon1:before {
+    content: "\e659";
+}
+
+.icon-StatusIcon3:before {
+    content: "\e65a";
+}
+
+.icon-StatusIcon2:before {
+    content: "\e65b";
+}
+
+.icon-add:before {
+    content: "\e658";
+}
+
+.icon-del:before {
+    content: "\e657";
+}
+
+.icon-link:before {
+    content: "\e656";
+}
+
+.icon-multiterm:before {
+    content: "\e655";
+}
+
+.icon-arrowsR:before {
+    content: "\e654";
+}
+
+.icon-cny:before {
+    content: "\e653";
+}
+
+.icon-account:before {
+    content: "\e647";
+}
+
+.icon-password:before {
+    content: "\e648";
+}
+
+.icon-email:before {
+    content: "\e649";
+}
+
+.icon-passw:before {
+    content: "\e64a";
+}
+
+.icon-invite:before {
+    content: "\e64b";
+}
+
+.icon-invisible:before {
+    content: "\e64f";
+}
+
+.icon-shield:before {
+    content: "\e650";
+}
+
+.icon-visible:before {
+    content: "\e651";
+}
+
+.icon-usd:before {
+    content: "\e652";
+}
+
+.tokenLogo {
+    font-family: "tokenLogo" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.token-BCH:before {
+    content: "\e643";
+}
+
+.token-ETH:before {
+    content: "\e644";
+}
+
+.token-DOGE:before {
+    content: "\e645";
+}
+
+.token-ATOM:before {
+    content: "\e646";
+}
+
+.token-DOT:before {
+    content: "\e647";
+}
+
+.token-TRX:before {
+    content: "\e648";
+}
+
+.token-XRP:before {
+    content: "\e649";
+}
+
+.token-EOS:before {
+    content: "\e64a";
+}
+
+.token-ZEC:before {
+    content: "\e64b";
+}
+
+.token-LTC:before {
+    content: "\e64c";
+}
+
+.token-BTC:before {
+    content: "\e64d";
+}
+
+.token-ADA:before {
+    content: "\e64e";
+}
+
+.token-HT:before {
+    content: "\e64f";
+}

@@ -1,0 +1,866 @@
+@charset "utf-8";
+
+:root {
+    --essential: #056c15;
+    --blendent0: #78aa48;
+    --blendent1: #fff7f7;
+    --blendent2: #799cfb;
+    --blendent3: #ff6b47;
+    --blendent4: #8f65f9;
+    --blendent5: #1e72ff;
+
+    --bgcolor: #fff9f9;
+    --black0: #1e2531;
+    --black1: #4b4d5e;
+    --black2: #818393;
+    --black3: #cfd0d9;
+    --hover: url('../images/mouse.png'),pointer;
+    --regular: url('../images/mouse.png'),auto;
+}
+
+
+/* 布局 版面  */
+
+body:after {
+    content: " ";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: fixed;
+    z-index: -2;
+}
+
+body.bgfff::after {
+    background-color: #fff;
+}
+
+::selection {
+    background: rgb(9, 95, 43);
+    color: #fff;
+}
+
+::-moz-selection {
+    background: rgb(9, 95, 43);
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: rgb(9, 95, 43);
+    color: #fff;
+}
+
+.main {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.display {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.alignCenter {
+    /* 上下居中 */
+    align-items: center;
+}
+
+.alignStart {
+    /* 顶部对齐 */
+    align-items: flex-start;
+}
+
+.alignEnd {
+    /* 底部对齐 */
+    align-items: flex-end;
+}
+
+.alignStretch {
+    /* 高度平均 */
+    align-items: stretch;
+}
+
+.justifyEnd {
+    /* 右边对齐 */
+    justify-content: flex-end
+}
+
+.justifyDetween {
+    /* 两边对齐 */
+    justify-content: space-between
+}
+
+.justifyCenter {
+    /* 左右居中齐 */
+    justify-content: center
+}
+
+.flex1 {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex2 {
+    -moz-box-flex: 2;
+    -webkit-box-flex: 2;
+    -o-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.flex3 {
+    -moz-box-flex: 3;
+    -webkit-box-flex: 3;
+    -o-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.clear:after {
+    clear: both;
+    display: table;
+    content: ''
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+
+/*--圆角--*/
+
+.radius50P {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.radius3PX {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.radius7PX {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+.radius15PX {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.radius7700PX {
+    border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -moz-border-radius: 7px 7px 0 0;
+}
+
+.radius500PX {
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.radius151500PX {
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+}
+
+.radius001515PX {
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+}
+
+
+/*--头部导航栏--*/
+.navigation {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+    position: fixed;
+    background-color: rgb(30 14 52 / 90%);
+    z-index: 9;
+}
+
+.navigation a {
+    display: inline-block;
+}
+
+.navigation .logo {
+    padding: 5px;
+}
+
+.navigation .logo img {
+    height: 50px;
+}
+
+.navigation .menu ul li {
+    margin: 10px;
+}
+
+.navigation .menu ul li a {
+    padding: 10px 20px;
+    font-family: 'Barlow-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* H5侧边菜单 */
+
+.toggleSideMenu {
+    width: 50px;
+    padding: 10px 15px;
+}
+
+.toggleSideMenu i {
+    width: 100%;
+    height: 3px;
+    margin: 5px 0;
+    display: block;
+    background-color: #fff;
+}
+
+.closeSideMenu {
+    width: 50px;
+    margin: 10px 20px;
+    padding: 10px 15px;
+}
+
+.sideMenu {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(44, 19, 73, 0.95);
+    z-index: 999;
+    display: none;
+}
+
+.sideMenu .navList {
+    padding: 30px 0;
+}
+
+.sideMenu .navList ul li {
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.sideMenu .navList ul li a {
+  font-family: "Barlow-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.openSideMenu .sideMenu {
+    display: inline-flex;
+}
+
+.toggleSideMenu {
+    display: none;
+}
+
+/*限制文字行数*/
+
+.length-limit-1 {
+    cursor: pointer;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.length-limit-2 {
+    cursor: pointer;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.length-limit-10 {
+    cursor: pointer;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+}
+
+
+/*--过长省略--*/
+
+.omit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*兼容IE*/
+}
+
+
+/*弹框*/
+
+
+/*----*/
+
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dialog-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 99999;
+}
+
+.dialog:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9990;
+    background-color: transparent;
+    visibility: hidden;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, .2, 1);
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+}
+
+.dialog-show:before {
+    visibility: visible;
+    background-color: rgba(160, 160, 160, 0.3);
+}
+
+.dialog .dialog-box {
+    z-index: 9999;
+}
+
+.dialog .dialog-btn {
+    text-align: center;
+    border-top: 0 solid #eee;
+}
+
+.dialog .dialog-btn a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+p.specialTips {
+    margin: 5px 0 0;
+    font-size: 14px;
+    text-align: center;
+    color: #f51;
+}
+
+.tipsBox {
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.tips p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+/* 解说讲解 */
+.explain p {
+    line-height: 1.5;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* 按钮组 */
+
+.clickBtn {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    border-width: 0;
+    background-color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.clickBtn:active {
+    transition: all 1s ease-out;
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+.clickBtn:active:after {
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
+
+.clickBtn_S {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/*--表单控件按钮区--*/
+.controlArea {
+    margin: 10px;
+}
+
+.controlArea>div,
+.controlArea .clickBtn {
+    margin: 0 0 0 10px;
+}
+
+.controlArea>div:nth-child(1),
+.controlArea .clickBtn:nth-child(1) {
+    margin: 0;
+}
+
+
+/* 底部定位按钮区 */
+
+div.fixedArea {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    padding: 10px 20px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 99;
+}
+
+/* 去色 */
+
+.expire {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+/* 关闭圆点 */
+.roundOff {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    display: none;
+    background-color: #e2610b;
+    z-index: 99;
+}
+
+.roundOff1 {
+    display: flex !important;
+}
+
+.roundOff0 {
+    display: none;
+}
+
+.roundOff i {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 对话提示 */
+
+.promptBox,
+.toastBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.promptBox .overallShade,
+.toastBox .overallShade {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(2, 22, 1, 0.6);
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+}
+
+.toastBox .overallShade {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.promptCont,
+.toastCont {
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    top: -15%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    -ms-backdrop-filter: blur(2px);
+    -moz-box-shadow: 0 0 20px 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 2;
+}
+
+.promptCont .forms {
+    padding: 0;
+}
+
+.promptCont .forms ul li {
+    margin: 0 0 5px;
+}
+
+.toastCont {
+    max-width: 250px;
+    padding: 20px 30px;
+    background-color: rgba(17, 68, 44, 0.8);
+}
+
+.toastCont .icon {
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+.toastCont .icon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.toastCont .tipText {
+    text-align: center;
+}
+
+.toastCont .tipText p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.logOutTip {
+    width: 100%;
+}
+
+.logOutTip .tipText {
+    margin: 0 0 20px;
+}
+
+.logOutTip .tipText p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 单双背景色 */
+.f-even {
+    background-color: #f3f3f3;
+}
+
+.f-odd {
+    background-color: #dfdfdf;
+}
+
+
+
+.clickButton {
+    margin: 10px auto;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #FAC710;
+}
+
+/* 背景色 */
+
+.bg01 {
+    background: rgb(149, 16, 172);
+    background: -moz-linear-gradient(180deg, rgba(149, 16, 172, 1) 0%, rgba(42, 19, 72, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(149, 16, 172, 1) 0%, rgba(42, 19, 72, 1) 100%);
+    background: linear-gradient(180deg, rgba(149, 16, 172, 1) 0%, rgba(42, 19, 72, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9510ac", endColorstr="#2a1348", GradientType=1);
+}
+
+.bg02 {
+    background-color: #FFC700;
+}
+
+.bg03 {
+    background: rgb(44, 19, 73);
+    background: -moz-linear-gradient(180deg, rgba(44, 19, 73, 1) 0%, rgba(12, 12, 12, 1) 80%);
+    background: -webkit-linear-gradient(180deg, rgba(44, 19, 73, 1) 0%, rgba(12, 12, 12, 1) 80%);
+    background: linear-gradient(180deg, rgba(44, 19, 73, 1) 0%, rgba(12, 12, 12, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c1349", endColorstr="#0c0c0c", GradientType=1);
+}
+
+.bg04 {
+    background: rgb(149, 16, 172);
+}
+
+.titleIMG {
+    width: 100%;
+    text-align: center;
+}
+
+.titleIMG img {
+    height: 65px;
+}
+
+
+/* 页尾 */
+
+
+.footer {
+    padding: 20px;
+    background-color: rgba(12, 12, 12, 1);
+}
+
+.footer>div {
+    padding: 10px 0;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.footer .logo {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer .thirdParty ul li {
+    width: 40px;
+}
+
+.footer .copy {
+    text-align: center;
+}
+
+
+
+/* 购买窗 */
+
+
+.leftSideBox,
+.rightSideBox {
+    padding: 0 20px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px;
+    position: absolute;
+    z-index: 10;
+}
+
+.leftSideBox {
+    left: 0;
+}
+
+.rightSideBox {
+    right: 0;
+}
+
+
+.rightSideBox i {
+    font-size: 22px;
+}
+
+
+#promptSort_buyBox .promptCont {
+    background-color: #FFC700;
+}
+
+.buyBox {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.buyBox .boxIcon {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.buyBox .boxIcon img {
+    width: 100%;
+}
+
+.buyBox .detailList ul li {
+    margin: 5px;
+    padding: 5px;
+}
+
+.buyBox .detailList ul li p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.buyBox .detailList ul li .cont p {
+}
+
+.buyBox .forms {
+    padding: 0;
+}
+
+.addSubtract .add,
+.addSubtract .subtract {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.addSubtract .add i,
+.addSubtract .subtract i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #999;
+}
+
+.addSubtract .add i {
+    color: #fff;
+    background-color: #FFC700;
+}
+
+.addSubtract .buyShare {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+}
+
+.describe p {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+.promptContMain, .toastCont {
+    width: 100%;
+    margin: 0px auto;
+    z-index: 2;
+}
+.overallShadeMain {
+  content: "";
+  position: fixed;
+  inset: 0px;
+  background-color: rgb(250 199 16);
+  z-index: 1;
+  backdrop-filter: blur(1px);
+}

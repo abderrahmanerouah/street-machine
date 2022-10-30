@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+::-webkit-input-placeholder {
+    height: 50px;
+    line-height: 50px;
+    color: #CACACA;
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    height: 50px;
+    line-height: 50px;
+    color: #CACACA;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    height: 50px;
+    line-height: 50px;
+    color: #CACACA;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    height: 50px;
+    line-height: 50px;
+    color: #CACACA;
+    font-size: 14px;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="number"] {
+    font-family: arial;
+}
+
+.fillArea,
+textarea,
+select {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    outline-color: invert;
+    outline-style: none;
+    outline-width: 0px;
+    text-shadow: none;
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+    user-select: text;
+    outline-color: transparent;
+    box-shadow: none;
+    border-width: 0;
+    border-color: #e0e0e0;
+    border-style: solid;
+    color: #888;
+    font-weight: 500;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background-color: transparent;
+}
+
+.fillArea:focus {
+    border-color: #78aa48
+}
+
+button[disabled],
+input[disabled] {
+    color: #fff;
+    background-color: #c9c9c9;
+    background: -ms-linear-gradient(right, #c2c2c2, #c9c9c9);
+    background: -moz-linear-gradient(right, #c2c2c2, #c9c9c9);
+    background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#c2c2c2), to(#c9c9c9));
+    background: -webkit-linear-gradient(right, #c2c2c2, #c9c9c9);
+    background: -o-linear-gradient(right, #c2c2c2, #c9c9c9);
+    border-width: 0;
+    cursor: no-drop;
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+textarea {
+    height: 180px;
+    line-height: 26px;
+    padding: 0 8px;
+    resize: none;
+    background: #F7F6F6;
+    overflow: auto;
+    outline: none;
+}
+
+.mobileICO,
+.checkCodeICO,
+.pwdICO,
+.vpwdICO,
+.userNameICO,
+.identityICO,
+.cardNoICO,
+.dollarSignICO,
+.bankICO {
+    padding: 10px 10px 10px 30px;
+}
+
+.mobileICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/mobile.svg');
+}
+
+input.mobileICO:focus {
+    background-position: 0 -42px;
+}
+
+.checkCodeICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/checkCode.svg');
+}
+
+input.checkCodeICO:focus {
+    background-position: 0 -42px;
+}
+
+.pwdICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/pwd.svg');
+}
+
+input.pwdICO:focus {
+    background-position: 0 -42px;
+}
+
+.vpwdICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/vpwd.svg');
+}
+
+input.vpwdICO:focus {
+    background-position: 0 -42px;
+}
+
+.userNameICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/name.svg');
+}
+
+input.userNameICO:focus {
+    background-position: 0 -42px;
+}
+
+.identityICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/identity.svg');
+}
+
+input.identityICO:focus {
+    background-position: 0 -42px;
+}
+
+.cardNoICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/bankCard.svg');
+}
+
+input.cardNoICO:focus {
+    background-position: 0 -42px;
+}
+
+.dollarSignICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/money.svg');
+}
+
+input.dollarSignICO:focus {
+    background-position: 0 -42px;
+}
+
+
+.bankICO {
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 0 10px;
+    background-image: url('../fonts/bank.svg');
+}
+
+input.bankICO:focus {
+    background-position: 0 -42px;
+}
+
+.inpUP {
+    right: 10px;
+    top: 15px;
+    font-size: 14px;
+    color: #0098ff;
+    position: absolute;
+}
+
+.agreeCheck {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+    position: relative;
+}
+
+.check {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.agreeCheck input[type=checkbox],
+.check input[type=checkbox],
+.check input[type=radio] {
+    display: none;
+    visibility: hidden;
+}
+
+.agreeCheck label,
+.check label {
+    line-height: 16px;
+    padding: 0 0 0 20px;
+    color: #999;
+    display: inline-block;
+    position: relative;
+}
+
+.agreeCheck label::before,
+.check label::before {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    top: 0;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    text-align: center;
+    vertical-align: text-top;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+.agreeCheck label:after,
+.check label:after {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: iconfont;
+    position: absolute;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.agreeCheck input[type=checkbox]:checked+label:after,
+.check input[type=checkbox]:checked+label:after,
+.check input[type=radio]:checked+label:after {
+    opacity: 1;
+    background-color: #3c8f22;
+    content: "\e65b";
+}
+
+.forms {
+    padding: 30px 20px;
+}
+
+.forms .agreeCheck label span,
+.forms .check label span {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/*----*/
+
+.inputBox {
+    margin: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
+}
+
+.inputBox.forms ul li:last-child {
+    margin: 0;
+}
+
+.inputBox.forms ul li h4 {
+    font-size: 18px;
+    color: #666;
+}
+
+.inputBox.forms ul li p {
+    font-size: 18px;
+    color: #666;
+}
+
+.inputBox.forms ul li span {
+    font-size: 12px;
+    color: #999;
+}
+
+.inputBox.forms ul li .attribute>div {
+    width: 50%;
+    margin: 0 0 10px 0;
+}
+
+.inputBox.forms ul li .attribute p {
+    font-size: 16px;
+    color: #056c15;
+    font-weight: 700;
+}
+
+.inputBox.forms ul li .attribute p em {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.inputBox.forms ul li .attribute span {
+    font-size: 14px;
+    color: #627465;
+}

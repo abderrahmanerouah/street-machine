@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+
+@media screen and (max-width: 1100px) {
+    .main>div {
+        padding: 10px;
+    }
+
+    .navigation .menu ul li a {
+        padding: 10px;
+    }
+
+    .explain p {
+        font-size: 20px;
+    }
+
+    .bannerCont .titleIMG {
+        margin: 0;
+    }
+
+    .bannerCont {
+        padding: 0 10px;
+    }
+
+    .bannerCont .text p {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .titleIMG img {
+        height: 35px;
+    }
+    .area2 .cardHeroGrid .grid .introduce p,
+    .area2 .cardHeroGrid .explain p {
+        /* font-size: 20px;
+        line-height: 1.3; */
+    }
+
+    .area2 .cardHeroGrid .grid {
+        padding: 20px 10px;
+    }
+
+    .combine1 .area9 {
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .navigation {
+        padding: 0 20px;
+    }
+
+    .area5 .streetmap {
+        padding: 0;
+    }
+
+    .area5 .streetmap .explain {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .about .banner .shading>img {
+        width: inherit;
+        height: 100%;
+    }
+
+    .navigation .menu,
+    .navigation .thirdparty {
+        display: none;
+    }
+
+    .toggleSideMenu {
+        display: block;
+    }
+
+    .bannerCont {
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .explain {
+        width: 100%;
+    }
+
+    .explain p {
+        line-height: 1.0;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .combine1>.titleIMG {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .combine1 .imgCards {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .area1 .story {
+        padding: 20px 0;
+    }
+
+    .area2 .story01 {
+        display: block;
+    }
+
+    .area2 .story01 .imgCards {
+        padding: 10px;
+    }
+
+    .combine1 .area4 .imgCards {
+        margin: 0;
+    }
+
+    .area2 .story01 .clickButton {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        display: block;
+        font-size: 16px;
+    }
+
+    .combine1 .area2,
+    .combine1 .area3,
+    .combine1 .area5,
+    .combine1 .area6,
+    .combine1 .area7,
+    .combine1 .area8 {
+        padding: 30px 0;
+        display: block;
+    }
+
+    /*about*/
+    .combine1 .area4 .explain {
+        width: 100%;
+        /* margin: 20px; */
+    }
+
+    .combine1 .area5 .titleIMG img,
+    .combine1 .area6 .titleIMG img,
+    .combine1 .area7 .titleIMG img {
+        height: 60px;
+    }
+
+
+    .area1 .lImg,
+    .area1 .rImg {
+        display: none;
+    }
+
+    .area3 .partnerList ul li {
+        width: 47%;
+        height: initial;
+        margin: 5px;
+    }
+    .combine3 .bulletinBoard {
+        padding: 20px;
+    }
+
+    .combine3 .bulletinBoard .bgImg img {
+        width: initial;
+        height: 100%;
+    }
+
+    .area8 .faq {
+        margin: 20px;
+    }
+
+    .area8 .faq .faqListItem ul li h4 {
+        font-size: 22px;
+    }
+
+    .area8 .faq .faqListItem ul li p {
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    .gallery {
+        width: 100%;
+        margin: 0;
+    }
+
+    .gallery .banner .title {
+        text-align: center;
+    }
+
+    .gallery .banner .title span {
+        font-size: 40px;
+    }
+}

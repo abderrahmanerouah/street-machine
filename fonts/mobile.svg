@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>635EA274CB42C43733E4C070</RequestId>
+  <HostId>streetmachine.oss-us-west-1.aliyuncs.com</HostId>
+  <Key>img/input/mobile.svg</Key>
+</Error>
